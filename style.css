@@ -1,4 +1,46 @@
 body {
     font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: #1f2937;
+}
+
+.content1 {
+    background-color: #1f2937;
+    
+}
+
+
+
+.header-link {
+    color: white;
+    font-size: 18px;
+}
+
+.content2 {
+    
+}
+
+
+
+.content3 {
+
+    background-color: #e5e7eb;
+
+}
+
+.content4 {
+
+}
+
+
+.footer {
+    background-color: #1f2937;
+    color: white;
+
 }
 
