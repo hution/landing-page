@@ -1,7 +1,8 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: black;
     
 
 }
@@ -9,14 +10,12 @@ body {
 .header {
     background-color: #1f2937;
     display: flex;
-    height: 50px;
+    height: 75px;
     justify-content: space-between;
     padding: 8px;
-
+    padding-left: 10%;
 }
-.logo {
 
-}
 
 ul {
     display: flex;
@@ -31,10 +30,15 @@ ul {
     gap: 16px;
  }  
 
+ .header .right{
+    padding-right: 10%;
+ }
+
 
 .logo {
     color: #f9faf8;
     font-size: 24px;
+    font-weight: bolder;
 }
 
 .content1 {
@@ -44,17 +48,31 @@ ul {
     padding: 0;
     gap: 10px;
     justify-content: left;
-    height: 200px;
+    height: 400px;
 
 }
+
+#banner-image {
+    padding-right: 10%;
+}
+
+#banner-image img{
+    display: flex;
+    /* height: auto;
+    width: 100%; */
+    object-fit: contain;
+    max-width: 450px;
+    max-height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
 
 #header-text {
     display: flex;
     font-size: 48px;
-    
     color: #F9FAF8;
-    font-weight: 900;
-    
+    font-weight: bold;   
 
 }
 
@@ -65,15 +83,32 @@ ul {
 
 button {
     align-self: baseline;
+    outline: none;
+    border-radius: 7px;
+    color:white;
+    width:100px;
+    height: 30px;
+    font-size: 18px;
 }
+
+
 
 button, .content4 #container{
     background-color: #3882F6;
 }
 
+.content1 .left button{
+    border: 1px solid black;
+}
+
+#container .single button{
+    border: 1px solid white;
+}
+
 .content1 .left{
     flex-direction: column;
     padding: 25px;
+    padding-left:10%;
     align-content: flex-start;
     flex-wrap: wrap;
     width: 40%;
@@ -92,45 +127,81 @@ a {
 .content2 {
     display: flex;
     align-items: center;
-    height: 200px;
+    height: 450px;
     flex-direction: column;
+    background-color: white;
     
 }
 
 .content2 #hero-text {
     font-size: 36px;
-    font-weight: 900;
+    font-weight: bolder;
     color: #1F2937;
     padding:20px;
+    padding-top:50px;
+    padding-bottom: 40px;
 }
 
 .content1 .right{
     padding-left: 100px;
 }
 
-.micro-content {
+.micro-content{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#content1, #content2, #content3, #content4{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:5px;
+    
 }
 
 .micro-content img {
-    width:50px;
-    height: 50px;
+    width:150px;
+    height: 150px;
+    border: 3px solid blue;
+    border-radius: 7px;
     
+}
+
+.micro-content #sub-text {
+    display: flex;
+    justify-content: center;
+    color: #1F2937;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
 }
 
 .content3 {
     background-color: #e5e7eb;
     display: flex;
-    justify-content: ce;
+    justify-content: center;
     flex-direction: column;
-    height: 200px;
+    height: 400px;
 }
 
 #quote-text {
     font-size: 36px;
     font-style: italic;
+    font-weight: 100;
     color: #1F2937;
+    padding-left: 25%;
+    padding-right:25%;
+    padding-top: 2%;
 }
 
 #author-text {
@@ -140,19 +211,42 @@ a {
     font-weight: 800;
     color: black;
     justify-content: right;
+    padding-right:30%;
 }
 
 .content4 {
     display: flex;
+    justify-content: center;
     padding: 50px;
-    height: 200px;
+    height: 100px;
+    background-color: white;
 
 }
+
 .content4 #container {
+
+    display:flex;
+    width: 80%;
+    height: 100px;
+    border-radius: 7px;
+    gap:100px
+}
+
+
+.content4 #container .stack {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    gap: 5px;
     margin: 50px;
+}
+
+.content4 #container .single {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 20%;
+    
 }
 
 #container #hero-text {
@@ -174,7 +268,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 75px;
 
 }
 
